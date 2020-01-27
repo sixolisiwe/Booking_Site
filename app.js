@@ -45,4 +45,8 @@ app.get('/Type', function(req, res){
  app.get('/Cpt', function(req,res){
      res.redirect('/Bookings')
  })
-app.listen(3002);
+ const PORT = process.env.PORT || 3002
+app.listen(PORT, function () {
+    console.log("App listening at port:", PORT);
+
+})
