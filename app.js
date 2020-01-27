@@ -9,12 +9,25 @@
 
 const express = require('express');
 const exphbs  = require('express-handlebars');
- 
+const bodyParser = require('body-parser')
+
 var app = express();
  
 app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
- 
+
+app.set('view engine', 'handlebars'); //configure handlebars
+
+
+
+
+
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
+
+app.use(bodyParser.json()) //config as per line13
+
+app.use(express.static('public'));
 app.get('/', function (req, res) {
     res.render('Travel');
 });
