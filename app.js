@@ -1,24 +1,20 @@
-//console.log("Hello World"); 
-// const express = require('express')
-// const app = express()
-// const port = 3000
 
-// app.get('/', (req, res) => res.render(Travel.handlebars))
-
-// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 const express = require('express');
 const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser')
-
+var session = require('express-session');
 var app = express();
  
 app.engine('handlebars', exphbs());
 
 app.set('view engine', 'handlebars'); //configure handlebars
 
-
-
+app.use(session({
+    secret: "enter here",
+    resave: false,
+    saveUninitialized: true
+}));
 
 
 app.use(bodyParser.urlencoded({
