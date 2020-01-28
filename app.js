@@ -36,15 +36,42 @@ app.get('/Type', function(req, res){
  app.post('/submit',function(req,res){
      res.redirect('/Type')
  })
- app.get('/Bookings', function(req, res){//route name
-     res.render('Destination')//file to display
+ app.get('/BnbBookings', function(req, res){//route name
+     res.render('Bnb')//file to display
  })
  app.post('/Acc_Type', function(req, res){
-     res.redirect('/Bookings')
+     res.redirect('/BnbBookings')
  })
- app.get('/Cpt', function(req,res){
-     res.redirect('/Bookings')
+ app.get('/Bnb', function(req,res){
+     res.redirect('/BnbBookings')
  })
+ app.get('/SelfCat', function(req, res){//route name
+    res.render('selfAcc')//file to display
+})
+app.post('/Acc_Type', function(req, res){
+    res.redirect('/SelfCat')
+})
+app.get('/Bnb', function(req,res){
+    res.redirect('/BnbBookings')
+})
+
+app.get('/Camping', function(req, res){//route name
+    res.render('Camp')//file to display
+})
+app.post('/Acc_Type', function(req, res){
+    res.redirect('/Camping')
+})
+app.get('/Bnb', function(req,res){
+    res.redirect('/Camping')
+})
+
+app.get('/BookMe', function(req, res){
+    res.render('booked')
+
+})
+app.post('/book', function(req, res){
+    res.redirect('/BookMe')
+})
  const PORT = process.env.PORT || 3002
 app.listen(PORT, function () {
     console.log("App listening at port:", PORT);
