@@ -21,10 +21,13 @@ body {
 .form-check-label{
     background-color: white;
 }
-.form-row{
-;
-}
+/* .form-row{
+
+} */
 .card{
     padding-top: 0ex;
 float: left;
+}
+.bookCont{
+    text-align: center;
 }
