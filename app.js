@@ -30,11 +30,11 @@ app.get('/', function (req, res) {
 app.get('/User_Info', function (req, res){
     res.render('form')
 })
-app.get('/Type', function(req, res){
-    res.render('Acc_Type1')
+app.get('/Acc_Type', function(req, res){//route name
+    res.render('Acc_Type1')//file type
 })
- app.post('/submit',function(req,res){
-     res.redirect('/Type')
+ app.post('/submission',function(req,res){//form action on html
+     res.redirect('/Acc_Type')
  })
  app.get('/BnbBookings', function(req, res){//route name
      res.render('Bnb')//file to display

@@ -9,16 +9,84 @@
   <div class="collapse navbar-collapse" id="navbar">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/User_Info">Complete form here! <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/User_Info">Sign up for our newsletters here! <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Sign Up</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        <a class="nav-link " href="#"> Log In</a> 
       </li>
+
     </ul>
 
   </div>
 </nav>
+<form action="/submission" method="post"> 
+<div class="bookCont">
+<div class="DateSec"> 
+<div class="checkIn">
+ Check In <br> <input type="date" name="chekIn" id="Intime">
+
+</div>
+<div class="checkOut">
+ Check Out <br> <input type="date" name="ckOut" id="Outtime">
+</div>
+</div>
+<div class="Persons">
+ Adults <br> <select>
+  <option value="volvo">Adults</option>
+  <option value="saab">0</option>
+  <option value="saab">1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+  <option value="volvo">5</option>
+  <option value="saab">6</option>
+  <option value="opel">7</option>
+  <option value="audi">8</option>
+
+</select>
+</div>
+<div class="Persons">
+ Children <br> <select>
+  <option value="volvo">Children</option>
+  <option value="saab">0</option>
+  <option value="saab">1</option>
+  <option value="saab">2</option>
+  <option value="opel">3</option>
+  <option value="audi">4</option>
+  <option value="volvo">5</option>
+  <option value="saab">6</option>
+  <option value="opel">7</option>
+  <option value="audi">8</option>
+
+</select>
+</div>
+<div class="Provinces">
+ Select province <br> <select>
+  <option value="volvo">Western Cape</option>
+  <option value="saab">NC</option>
+  <option value="saab">FS</option>
+  <option value="saab">EC</option>
+  <option value="opel">KZN</option>
+  <option value="audi">4</option>
+  <option value="volvo">5</option>
+  <option value="saab">6</option>
+  <option value="opel">7</option>
+  <option value="audi">8</option>
+
+</select>
+</div>
+<div class="accomodationSel"> 
+Please select accomodation type below: <br>
+<input type="radio" name="Type" value="BnB"> BnB
+<input type="radio" name="Type" value="Self_Acc"> Self Accomomdation
+<input type="radio" name="Type" value="Camp"> Camping
+
+</div>
+  </div>
+  <div class="bookBtn"><a href="/All"></a>  <button type="submit" class="btn btn-primary">Search Accomomdation</button></div>
+
+</form>
