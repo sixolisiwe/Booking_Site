@@ -49,11 +49,9 @@ margin-top: 2em;
 .Persons{
     display: inline-block;
 }
-.cardCont{
-    margin: 20px;
-    margin-right: 10px; 
+/* .card{
 
-}
+} */
 .h3{
 text-decoration-color: white;
 }
